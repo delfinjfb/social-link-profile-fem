@@ -1,5 +1,6 @@
-
 import {Link} from "@remix-run/react";
+
+import imageProfile from "~/images/avatar-delfin.jpg";
 
 export default function Profile() {
 	return (
@@ -7,7 +8,7 @@ export default function Profile() {
 			<article className="bg-gray-800 p-8 rounded-lg shadow-md max-w-sm w-full">
 				<figure className="relative mb-4">
 					<img
-						src="app/images/avatar-delfin.jpg"
+						src={imageProfile}
 						alt="Delfin Fernandez"
 						className="w-32 h-32 rounded-full mx-auto mb-4"
 					/>
