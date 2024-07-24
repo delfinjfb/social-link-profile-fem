@@ -29,7 +29,7 @@ export default function Profile() {
 					<li>
 						<Link
 							to="https://www.linkedin.com/"
-							className="bg-[#0A66C2] hover:bg-[#171515] text-white text-center py-2 px-4 rounded-md block font-semibold"
+							className="bg-[#0A66C2] text-white text-center py-2 px-4 rounded-md block font-semibold hover:bg-lime-500 transition duration-200"
 						>
 							LinkedIn
 						</Link>
@@ -37,7 +37,7 @@ export default function Profile() {
 					<li>
 						<Link
 							to="https://www.frontendmentor.io/profile/yourusername" // Replace with your Frontend Mentor profile URL
-							className="bg-white hover:bg-gray-100 text-[#333] text-center py-2 px-4 rounded-md block font-semibold border border-[#333]"
+							className="bg-white text-[#333] text-center py-2 px-4 rounded-md block font-semibold border border-[#333]  hover:bg-lime-500 transition duration-200"
 						>
 							Frontend Mentor
 						</Link>
@@ -45,7 +45,7 @@ export default function Profile() {
 					<li>
 						<Link
 							to="https://github.com/yourusername" // Replace with your actual GitHub profile URL
-							className="bg-[#171515] hover:bg-[#333] text-white text-center py-2 px-4 rounded-md block font-semibold"
+							className="bg-[#171515]  text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
 						>
 							GitHub
 						</Link>
@@ -53,7 +53,7 @@ export default function Profile() {
 					<li>
 						<Link
 							to="https://twitter.com/yourusername" // Replace with your actual Twitter profile URL
-							className="bg-[#1DA1F2] hover:bg-[#1a91da] text-white text-center py-2 px-4 rounded-md block font-semibold"
+							className="bg-[#1DA1F2] text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
 						>
 							Twitter
 						</Link>
