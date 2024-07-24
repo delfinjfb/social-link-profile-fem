@@ -2,8 +2,11 @@ import {Link} from "@remix-run/react";
 
 import imageProfile from "~/images/avatar-delfin.jpg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faTwitter} from "@fortawesome/free-brands-svg-icons";
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {
+	faGithub,
+	faLinkedin,
+	faXTwitter
+} from "@fortawesome/free-brands-svg-icons";
 import {faCode} from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile() {
@@ -27,11 +30,11 @@ export default function Profile() {
 						<span className="text-lime-500">Lyon, France</span>
 					</p>
 				</header>
-				<p className="text-gray-300 text-center italic mb-8">
+				<p className="text-gray-300 text-center italic mb-2">
 					&ldquo;Full Stack Developer and avid reader.&ldquo;
 				</p>
 				<p className="text-gray-300 text-center italic mb-8">
-				JAVA, React Remix, React, Node.js, Angular, AWS, SEO - Web Marketing
+					JAVA, React Remix, React, Node.js, Angular, AWS, SEO - Web Marketing
 				</p>
 
 				<ul className="space-y-2">
@@ -73,11 +76,11 @@ export default function Profile() {
 						<Link
 							target="_blank"
 							to="https://twitter.com/delfinfb" // Replace with your actual Twitter profile URL
-							className="bg-[#1DA1F2] text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
+							className="bg-[#00acee]  text-black text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
 							rel="noreferrer"
 						>
-							<FontAwesomeIcon icon={faTwitter} className="pe-2" />
-							Twitter
+							<FontAwesomeIcon icon={faXTwitter} className="pe-2" />
+							Twitter X
 						</Link>
 					</li>
 				</ul>
