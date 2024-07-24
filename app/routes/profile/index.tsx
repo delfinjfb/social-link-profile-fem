@@ -9,6 +9,37 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {faCode} from "@fortawesome/free-solid-svg-icons";
 
+const socialLinks = [
+	{
+		name: "LinkedIn",
+		url: "https://www.linkedin.com/in/delfinjfb/",
+		icon: faLinkedin,
+		class:
+			"bg-[#0A66C2] text-white text-center py-2 px-4 rounded-md block font-semibold hover:bg-lime-500 transition duration-200"
+	},
+	{
+		name: "Frontend Mentor",
+		url: "https://www.frontendmentor.io/profile/delfinjfb",
+		icon: faCode,
+		class:
+			"bg-white text-[#333] text-center py-2 px-4 rounded-md block font-semibold border border-[#333]  hover:bg-lime-500 transition duration-200"
+	},
+	{
+		name: "GitHub",
+		url: "https://github.com/delfinjfb",
+		icon: faGithub,
+		class:
+			"bg-[#171515]  text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
+	},
+	{
+		name: "Twitter X",
+		url: "https://twitter.com/delfinfb",
+		icon: faXTwitter,
+		class:
+			"bg-[#00acee]  text-black text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
+	}
+];
+
 export default function Profile() {
 	return (
 		<main className="bg-gray-900 min-h-screen flex items-center justify-center">
@@ -38,51 +69,19 @@ export default function Profile() {
 				</p>
 
 				<ul className="space-y-2">
-					<li>
-						<Link
-							target="_blank"
-							to="https://www.linkedin.com/in/delfinjfb/"
-							className="bg-[#0A66C2] text-white text-center py-2 px-4 rounded-md block font-semibold hover:bg-lime-500 transition duration-200"
-							rel="noreferrer"
-						>
-							<FontAwesomeIcon icon={faLinkedin} className="pe-2" />
-							LinkedIn
-						</Link>
-					</li>
-					<li>
-						<Link
-							target="_blank"
-							to="https://www.frontendmentor.io/profile/delfinjfb" // Replace with your Frontend Mentor profile URL
-							className="bg-white text-[#333] text-center py-2 px-4 rounded-md block font-semibold border border-[#333]  hover:bg-lime-500 transition duration-200"
-							rel="noreferrer"
-						>
-							{" "}
-							<FontAwesomeIcon icon={faCode} className="pe-2" />
-							Frontend Mentor
-						</Link>
-					</li>
-					<li>
-						<Link
-							target="_blank"
-							to="https://github.com/delfinjfb" // Replace with your actual GitHub profile URL
-							className="bg-[#171515]  text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
-							rel="noreferrer"
-						>
-							<FontAwesomeIcon icon={faGithub} className="pe-2" />
-							GitHub
-						</Link>
-					</li>
-					<li>
-						<Link
-							target="_blank"
-							to="https://twitter.com/delfinfb" // Replace with your actual Twitter profile URL
-							className="bg-[#00acee]  text-black text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
-							rel="noreferrer"
-						>
-							<FontAwesomeIcon icon={faXTwitter} className="pe-2" />
-							Twitter X
-						</Link>
-					</li>
+					{socialLinks.map(link => (
+						<li key={link.name}>
+							<Link
+								target="_blank"
+								to={link.url}
+								className={`${link.class} `}
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon icon={link.icon} className="pe-2" />
+								{link.name}
+							</Link>
+						</li>
+					))}
 				</ul>
 			</article>
 		</main>
