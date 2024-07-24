@@ -1,6 +1,10 @@
 import {Link} from "@remix-run/react";
 
 import imageProfile from "~/images/avatar-delfin.jpg";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faCode} from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile() {
 	return (
@@ -31,6 +35,7 @@ export default function Profile() {
 							to="https://www.linkedin.com/"
 							className="bg-[#0A66C2] text-white text-center py-2 px-4 rounded-md block font-semibold hover:bg-lime-500 transition duration-200"
 						>
+							<FontAwesomeIcon icon={faLinkedin} className="pe-2" />
 							LinkedIn
 						</Link>
 					</li>
@@ -39,6 +44,8 @@ export default function Profile() {
 							to="https://www.frontendmentor.io/profile/yourusername" // Replace with your Frontend Mentor profile URL
 							className="bg-white text-[#333] text-center py-2 px-4 rounded-md block font-semibold border border-[#333]  hover:bg-lime-500 transition duration-200"
 						>
+							{" "}
+							<FontAwesomeIcon icon={faCode} className="pe-2" />
 							Frontend Mentor
 						</Link>
 					</li>
@@ -47,6 +54,7 @@ export default function Profile() {
 							to="https://github.com/yourusername" // Replace with your actual GitHub profile URL
 							className="bg-[#171515]  text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
 						>
+							<FontAwesomeIcon icon={faGithub} className="pe-2" />
 							GitHub
 						</Link>
 					</li>
@@ -55,6 +63,7 @@ export default function Profile() {
 							to="https://twitter.com/yourusername" // Replace with your actual Twitter profile URL
 							className="bg-[#1DA1F2] text-white text-center py-2 px-4 rounded-md block font-semibold  hover:bg-lime-500 transition duration-200"
 						>
+							<FontAwesomeIcon icon={faTwitter} className="pe-2" />
 							Twitter
 						</Link>
 					</li>
