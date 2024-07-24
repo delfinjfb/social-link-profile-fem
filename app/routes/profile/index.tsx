@@ -10,7 +10,7 @@ export default function Profile() {
 					<img
 						src={imageProfile}
 						alt="Delfin Fernandez"
-						className="w-32 h-32 rounded-full mx-auto mb-4"
+						className="w-20 h-20 rounded-full mx-auto mb-4"
 					/>
 				</figure>
 				<header>
